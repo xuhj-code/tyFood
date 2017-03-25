@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    tools:context="com.food.ty.tyfood.activity.MainActivity"
+    tools:ignore="MergeRootFrame">
+
+<FrameLayout
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/main_menu" />
+
+<LinearLayout
+    android:id="@+id/main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_grey" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_bar_height"
+        android:background="@color/white"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="timeline"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_menu_main"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="主页"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/tiny_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_menu_main"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tv_menu_main"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="0"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_timeline" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="circle"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_navi_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="做菜"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/tiny_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_navi_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tv_navi_circle"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_circle" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="order"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_navi_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="订单"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/tiny_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_navi_order"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tv_navi_order"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="2"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_order" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="account"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/tv_navi_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="我的"
+                android:textColor="@color/dark_grey"
+                android:textSize="@dimen/tiny_text_size" />
+
+            <ImageView
+                android:id="@+id/iv_navi_me"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_above="@id/tv_navi_me"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="3"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_account" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>

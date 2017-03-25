@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="店名"
+        android:id="@+id/tv_order_shop_name"
+        />
+    <View
+        android:layout_below="@+id/tv_order_shop_name"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        android:id="@+id/vi_one"/>
+    <ListView
+        android:id="@+id/lv_order_food_info"
+        android:layout_below="@+id/vi_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        >
+    </ListView>
+    <View
+        android:layout_below="@+id/lv_order_food_info"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+       />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="待支付："
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_pay_money"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="0.0"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_submit_order"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="提交订单"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>
